@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Grade Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <h1>🎓 Student Grade Manager</h1>
+    <button class="dark-toggle" onclick="toggleDark()">🌙 Dark Mode</button>
+  </div>
+
+  <div class="create-class-row">
+    <input id="className" placeholder="Enter class name (e.g. Class 10-A)" onkeydown="if(event.key==='Enter') createClass()" />
+    <button class="btn-create" onclick="createClass()">+ Create Class</button>
+  </div>
+
+  <div class="classes-grid" id="classesGrid">
+    <div class="empty-state" id="emptyState">No classes yet. Create one above </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
